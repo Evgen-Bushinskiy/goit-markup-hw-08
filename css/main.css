@@ -21,6 +21,8 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 h1,
@@ -645,13 +647,6 @@ ul {
   .team__item {
     flex-basis: calc((100% - 120px) / 4);
   }
-}
-
-.team__img {
-  max-width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
 }
 
 .team__data {
