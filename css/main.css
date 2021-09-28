@@ -104,8 +104,8 @@ ul {
 
 .logo {
   display: block;
-  padding-top: 25px;
-  padding-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   margin-left: 0 auto;
   margin-right: 93px;
   color: var(--logo-black);
@@ -133,6 +133,7 @@ ul {
   display: flex;
   align-items: center;
   margin: auto;
+  justify-content: space-between;
 }
 
 .navigation {
@@ -142,11 +143,20 @@ ul {
 
 .nav {
   position: relative;
-  display: flex;
+  display: none;
 }
 
 .nav .nav__item:not(:last-child) {
   margin-right: 50px;
+}
+
+.contacts {
+  display: none;
+  margin-left: auto;
+}
+
+.contacts + .contacts__item {
+  margin-left: 50px;
 }
 
 .nav__link {
@@ -185,15 +195,6 @@ ul {
   opacity: 1;
 }
 
-.nav__link .contacts {
-  display: flex;
-  margin-left: auto;
-}
-
-.nav__link .contacts + .contacts__item {
-  margin-left: 50px;
-}
-
 .nav__link .contacts__link {
   color: var(--main-text-color);
   text-decoration: none;
@@ -222,6 +223,21 @@ ul {
 
 .contacts__link:hover .nav__link .contacts__icon,
 .contacts__link:focus .nav__link .contacts__icon {
+  fill: var(--accent-color);
+}
+
+.menu-open {
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.menu-open:hover, .menu-open:focus {
   fill: var(--accent-color);
 }
 
@@ -400,8 +416,7 @@ ul {
 .hero {
   max-width: 1600px;
   min-height: 400px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   margin-bottom: 60px;
   text-align: center;
   padding-top: 118px;

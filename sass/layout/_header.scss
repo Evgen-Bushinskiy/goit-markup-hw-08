@@ -1,11 +1,12 @@
 .header {
   border-bottom: 1px solid #ececec;
-}
+  }
 
 .header__align {
   display: flex;
   align-items: center;
   margin: auto;
+  justify-content: space-between;
 }
 
 .navigation {
@@ -15,10 +16,19 @@
 
 .nav {
   position: relative;
-  display: flex;
+  display: none;
 
 & .nav__item:not(:last-child) {
   margin-right: 50px;
+}
+}
+
+.contacts {
+  display: none; 
+  margin-left: auto;
+
+& + .contacts__item {
+  margin-left: 50px;
 }
 }
 
@@ -59,16 +69,6 @@
 }
 }
 
-
-.contacts {
-  display: flex;
-  margin-left: auto;
-
-& + .contacts__item {
-  margin-left: 50px;
-}
-}
-
 .contacts__link {
   color: var(--main-text-color);
   text-decoration: none;
@@ -101,3 +101,20 @@
 }
 }
 }
+
+.menu-open {
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: transparent;
+
+&:hover,
+&:focus {
+  fill: var(--accent-color);
+  }
+}
+
