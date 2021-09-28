@@ -257,9 +257,10 @@ ul {
   padding-bottom: 48px;
 }
 
-.container {
+.menu-mob-container {
   position: relative;
   height: 100%;
+  margin-left: 40px;
 }
 
 .menu-mob-item:not(:last-child) {
