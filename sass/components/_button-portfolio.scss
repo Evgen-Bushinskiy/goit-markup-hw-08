@@ -1,7 +1,18 @@
 .button-portfolio {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  margin-right: -8px;
+  margin-top: -15px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1209px) {
+    margin-bottom: 50px;
+  }
 }
 
 .button-portfolio__btn {
