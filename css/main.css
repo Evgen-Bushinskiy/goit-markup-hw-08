@@ -220,6 +220,10 @@ ul {
   opacity: 1;
 }
 
+.nav__link--current {
+  color: #2196F3;
+}
+
 .contacts {
   display: flex;
   flex-direction: column;
