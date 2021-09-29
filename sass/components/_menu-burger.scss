@@ -1,0 +1,158 @@
+.menu-open, .menu-close {
+  line-height: 0;
+  background-color: transparent;
+  border: none;
+  padding: 10px 0;
+
+&:hover,
+&:focus {
+  fill: var(--accent-color);
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .menu-open {
+    display: none;
+  }
+}
+
+.menu-close {
+  position: absolute;
+  right: 25px;
+  top: -37px;
+}
+
+.menu-mob {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  background-color: #ffffff;
+}
+
+.menu-mob-container {
+position: relative;
+height: 100%;
+max-width: 480px;
+}
+
+.menu-mob-item {
+&:hover,
+&:focus {
+fill: var(--accent-color);
+}
+}
+
+.menu-mob-item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.menu-mob-link {
+font-weight: 500;
+font-size: 40px;
+line-height: calc(47 / 40);
+text-align: center;
+letter-spacing: 0.02em;
+color: #212121;
+text-decoration: none;
+
+&:focus,
+&:hover {
+color: var(--accent-color);
+}
+}
+
+.menu-contacts-list {
+margin-bottom: 64px;
+}
+
+@media screen and (min-width: 1200px) {
+.menu-contacts-list {
+flex-direction: row;
+align-items: center;
+padding: 0;
+}
+}
+
+.menu-contacts-item {
+&:not(:last-child) {
+    margin-bottom: 32px;
+  } 
+}
+@media screen and (min-width: 1200px) {
+  .menu-contacts-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.menu-contacts-link {
+font-weight: 500;
+font-size: 24px;
+line-height: calc(28 / 24); 
+letter-spacing: 0.02em;
+text-decoration: none;
+color: #757575;
+
+@media screen and (min-width: 1200px){ 
+padding: 32px 0;
+}
+&:focus,
+&:hover {
+color: var(--accent-color);
+}
+}
+
+.menu-contacts-tel-link {
+font-size: 34px;
+line-height: calc(40 / 34); 
+}
+
+
+.menu-social-list {
+display: flex;
+  
+}
+
+.menu-social-item {
+&:not(:last-child) {
+margin-right: 10px;
+.menu-social-link{
+border-right: 1px solid rgba(33, 33, 33, 0.2);
+padding-right: 10px;
+}
+  } 
+}
+
+.menu-social-link {
+font-weight: 500;
+font-size: 18px;
+line-height: 1.22px;
+letter-spacing: 0.02em;
+text-decoration: none;
+color: #2196F3;
+border-right: 1px solid rgba(33, 33, 33, 0.2);
+padding-right: 10px;
+}
+
+.mob-menu-bottom {
+position: absolute;
+bottom: 0;
+}
+
+.menu-mob.is-hidden {
+opacity: 0;
+pointer-events: none;
+visibility: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-mob {
+    display: none;
+  }
+}
+

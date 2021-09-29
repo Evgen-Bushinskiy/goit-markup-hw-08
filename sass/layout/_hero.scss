@@ -53,11 +53,11 @@
 
 
 .hero__box {
-  margin: 0 auto;
-  // min-width: 360px;
-    @media screen and (min-width: 1200px){
-    max-width: 696px;
-  }
+margin: 0 auto;
+
+@media screen and (min-width: 1200px){
+max-width: 696px;
+}
 }
 
 
