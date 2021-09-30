@@ -35,9 +35,13 @@
 }
 
 .menu-mob-container {
-position: relative;
+// position: relative;
+// height: 100%;
+// max-width: 400px;
 height: 100%;
-max-width: 480px;
+position: relative;
+display: flex;
+flex-direction: column;
 }
 
 .menu-mob-item {
@@ -141,8 +145,10 @@ padding-right: 10px;
 }
 
 .mob-menu-bottom {
-position: absolute;
-bottom: 0;
+// position: absolute;
+// bottom: 0;
+// }
+margin-top: auto;
 }
 
 .menu-mob.is-hidden {
