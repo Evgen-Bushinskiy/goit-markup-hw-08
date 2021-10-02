@@ -91,8 +91,15 @@ ul {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .text {
@@ -481,7 +488,7 @@ ul {
   border-radius: 50%;
   cursor: pointer;
   position: absolute;
-  top: 25px;
+  top: 15px;
   right: 8px;
   padding: 0;
   display: flex;
@@ -557,7 +564,7 @@ ul {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:hover + .modal-form__icon {
+.modal-form__input:hover + .modal-form__icon {
   fill: var(--accent-color);
 }
 
@@ -1006,25 +1013,6 @@ ul {
 @media screen and (min-width: 1200px) {
   .team__item {
     flex-basis: calc((100% - 120px) / 4);
-  }
-}
-
-.clients {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-@media screen and (max-width: 768px) {
-  .clients {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
   }
 }
 
