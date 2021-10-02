@@ -371,7 +371,7 @@ ul {
 }
 
 .nav__link--current {
-  color: #2196F3;
+  color: #2196f3;
 }
 
 .contacts {
@@ -395,7 +395,7 @@ ul {
 }
 
 .contacts__item {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .contacts__icon {
@@ -428,6 +428,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .contacts__link {
     padding: 32px 0;
+    font-size: 14px;
   }
 }
 
@@ -480,7 +481,7 @@ ul {
   border-radius: 50%;
   cursor: pointer;
   position: absolute;
-  top: 8px;
+  top: 25px;
   right: 8px;
   padding: 0;
   display: flex;
@@ -519,7 +520,7 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.01em;
   margin-bottom: 10px;
-  color: var(--text-color);
+  color: #757575;
 }
 
 .modal-form__label:hover {
@@ -530,6 +531,7 @@ ul {
   position: relative;
   display: block;
   margin-top: 4px;
+  margin-bottom: 10px;
 }
 
 .modal-form__input {
@@ -564,6 +566,7 @@ ul {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
+  color: #757575;
 }
 
 .form-about {
@@ -672,7 +675,6 @@ ul {
   max-width: 1600px;
   min-height: 400px;
   margin: 0 auto;
-  margin-bottom: 60px;
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
@@ -680,6 +682,12 @@ ul {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    margin-bottom: 60px;
+  }
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -748,7 +756,19 @@ ul {
 @media screen and (min-width: 1200px) {
   .benefits {
     padding-top: 94px;
-    padding-bottom: 47px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefits {
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .benefits {
+    padding-bottom: 60px;
   }
 }
 
@@ -802,8 +822,7 @@ ul {
 }
 
 .benefits__heading {
-  display: flex;
-  align-items: center;
+  text-align: center;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -820,7 +839,7 @@ ul {
 
 .work {
   padding-top: 47px;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -863,7 +882,7 @@ ul {
   left: 0;
   height: 70px;
   width: 100%;
-  color: var(--White-color);
+  color: #ffffff;
   background: rgba(47, 48, 58, 0.8);
   font-weight: 700;
   font-size: 14px;
@@ -873,8 +892,10 @@ ul {
   text-transform: uppercase;
 }
 
-.team {
-  background-color: #f5f4fa;
+.team__section {
+  background-color: #ffffff;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .team__title {
@@ -882,7 +903,7 @@ ul {
   line-height: 1.19px;
   color: var(--main-text);
   text-align: center;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -988,13 +1009,32 @@ ul {
   }
 }
 
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .clients__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 50px;
   color: var(--main-text);
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .clients__list {
@@ -1301,7 +1341,7 @@ ul {
   display: flex;
   margin-right: -8px;
   margin-top: -15px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   flex-wrap: wrap;
 }
 
@@ -1329,6 +1369,7 @@ ul {
   cursor: pointer;
   border: 0;
   padding: 6px 22px;
+  margin-bottom: 15px;
   color: var(--main-text);
   background-color: #f5f4fa;
   transition-property: color;

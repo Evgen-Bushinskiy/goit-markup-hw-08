@@ -1,5 +1,7 @@
-.team {
-background-color: #f5f4fa;
+.team__section {
+background-color: #ffffff;
+padding-top: 60px;
+padding-bottom: 60px;
 }
 
 
@@ -8,7 +10,7 @@ background-color: #f5f4fa;
   line-height: 1.19px;
   color: var(--main-text);
   text-align: center;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
   @media screen and (min-width: 768px){

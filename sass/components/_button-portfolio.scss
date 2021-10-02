@@ -2,7 +2,7 @@
   display: flex;
   margin-right: -8px;
   margin-top: -15px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   flex-wrap: wrap;
 
   @media screen and (min-width: 768px) {
@@ -25,6 +25,7 @@
   cursor: pointer;
   border: 0;
   padding: 6px 22px;
+  margin-bottom: 15px;
 
   color: var(--main-text);
   background-color: #f5f4fa;
@@ -42,5 +43,5 @@
 }
 
 .button-portfolio__indention:not(:last-child) {
-  margin-right: 8px;
+margin-right: 8px;
 }

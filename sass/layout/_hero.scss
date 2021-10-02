@@ -2,7 +2,6 @@
   max-width: 1600px;
   min-height: 400px;
   margin: 0 auto;
-  margin-bottom: 60px;
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
@@ -11,12 +10,17 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  
+
+
+  @media screen and (max-width: 768px) {
+  margin-bottom: 60px;
+}
   
   @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
+    
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/mobile/imghero@2x.jpg');
   }

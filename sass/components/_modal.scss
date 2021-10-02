@@ -45,7 +45,7 @@
   border-radius: 50%;
   cursor: pointer;
   position: absolute;
-  top: 8px;
+  top: 25px;
   right: 8px;
   padding: 0;
   display: flex;
@@ -84,7 +84,7 @@
   line-height: 1.17;
   letter-spacing: 0.01em;
   margin-bottom: 10px;
-  color: var(--text-color);
+  color: #757575;
   
   &:hover {
     color: var(--accent-color);
@@ -95,6 +95,7 @@
   position: relative;
   display: block;
   margin-top: 4px;
+  margin-bottom: 10px;
 }
 
 .modal-form__input {
@@ -129,7 +130,9 @@
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
+  color: #757575;
 }
+
 
 .form-about {
   height: 120px;
