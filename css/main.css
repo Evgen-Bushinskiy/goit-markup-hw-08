@@ -691,12 +691,6 @@ ul {
   background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 768px) {
-  .hero {
-    margin-bottom: 60px;
-  }
-}
-
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/imghero@2x.jpg");
@@ -760,22 +754,16 @@ ul {
   }
 }
 
+@media screen and (min-width: 480px) {
+  .benefits {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .benefits {
     padding-top: 94px;
-    padding-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .benefits {
-    padding-bottom: 60px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .benefits {
-    padding-bottom: 60px;
   }
 }
 
@@ -845,8 +833,8 @@ ul {
 }
 
 .work {
-  padding-top: 47px;
-  padding-bottom: 60px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -899,18 +887,16 @@ ul {
   text-transform: uppercase;
 }
 
-.team__section {
-  background-color: #ffffff;
-  padding-top: 60px;
-  padding-bottom: 60px;
+.team {
+  background-color: #F5F4FA;
 }
 
 .team__title {
-  font-size: 28px;
-  line-height: 1.19px;
+  font-size: 36px;
+  line-height: 1.19;
   color: var(--main-text);
   text-align: center;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -923,7 +909,7 @@ ul {
 }
 
 .team__item {
-  background-color: var(--primary-background-color);
+  background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -1018,11 +1004,17 @@ ul {
 
 .clients__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 50px;
   color: var(--main-text);
   text-align: center;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+  }
 }
 
 .clients__list {
@@ -1321,14 +1313,20 @@ ul {
 }
 
 .main-portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .button-portfolio {
   display: flex;
   margin-right: -8px;
-  margin-top: -15px;
   margin-bottom: 25px;
   flex-wrap: wrap;
 }

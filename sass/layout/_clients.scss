@@ -1,10 +1,14 @@
 .clients__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 50px;
   color: var(--main-text);
   text-align: center;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+  font-size: 36px;
+  }
 }
 
 .clients__list {
